@@ -19,7 +19,7 @@ const config: Config = {
     },
     fontFamily: {
       "display": ["Verdana", "sans-serif"],
-      "body": ["'Courier Prime'", "monospace"],
+      "body": ["'var(--font-courier-prime)'", "monospace"],
     }
   },
   plugins: [],
