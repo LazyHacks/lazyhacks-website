@@ -16,6 +16,7 @@ const config: Config = {
     },
     colors: {
       "background-yellow": "#fff2c5",
+      "nav-brown": "#794c5b"
     },
     fontFamily: {
       "display": ["Verdana", "sans-serif"],

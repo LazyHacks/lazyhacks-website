@@ -4,7 +4,33 @@ export default function Home() {
   return (
     <>
       <header>
-        <nav>
+        <nav className="flex items-center justify-between">
+          <div className="flex">
+            <img className="h-[100px] w-[100px] object-contain" src="../images/nav/sloth_logo.PNG"></img>
+            <img className="h-[100px] w-[100px] object-cover" src="../images/nav/hackclub_logo.png"></img>
+          </div>
+          <div className="flex">
+            <a href="#about" className="relative group">
+              <img className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110" src="../images/nav/about_pillow.png"></img>
+              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">about</h3>
+            </a>
+            <a href="#faq" className="relative group">
+              <img className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110" src="../images/nav/faq_pillow.png"></img>
+              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">faq</h3>
+            </a>
+            <a href="#sponsors" className="relative group">
+              <img className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110" src="../images/nav/sponsors_pillow.png"></img>
+              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">sponsors</h3>
+            </a>
+            <a href="#socials" className="relative group">
+              <img className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110" src="../images/nav/socials_pillow.png"></img>
+              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">socials</h3>
+            </a>
+            <a href="#apply" className="relative group">
+              <img className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110" src="../images/nav/apply_pillow.png"></img>
+              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">apply!</h3>
+            </a>
+          </div>
         </nav>
       </header>
 
