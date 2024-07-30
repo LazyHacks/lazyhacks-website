@@ -19,7 +19,7 @@ const config: Config = {
       "nav-brown": "#794c5b"
     },
     fontFamily: {
-      "display": ["Verdana", "sans-serif"],
+      "display": ["Pangolin", "cursive"],
       "body": ["'var(--font-courier-prime)'", "monospace"],
     }
   },
