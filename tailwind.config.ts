@@ -16,7 +16,8 @@ const config: Config = {
     },
     colors: {
       "background-yellow": "#fff2c5",
-      "nav-brown": "#794c5b"
+      "nav-brown": "#794c5b",
+      "welcome-text": "#171717",
     },
     fontFamily: {
       "display": ["Pangolin", "cursive"],
