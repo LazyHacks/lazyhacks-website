@@ -65,7 +65,14 @@ export default function Home() {
         </nav>
       </header>
 
-      <main></main>
+      <main>
+        <div className="flex items-center text-center justify-center h-[85vh]">
+          <h1 className="font-body text-2xl">
+            welcome to
+            <img className="w-[30rem]" src="../images/sloth_logo_welcome.png" alt="LazyHacks logo" />
+          </h1>
+        </div>
+      </main>
 
       <footer className="flex flex-col items-center justify-center w-full h-auto border-t py-8 bg-gray-200">
         <p className="mb-4 text-lg">made with love</p>
