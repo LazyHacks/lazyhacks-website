@@ -66,11 +66,23 @@ export default function Home() {
       </header>
 
       <main>
-        <div className="flex items-center text-center justify-center h-[85vh]">
-          <h1 className="font-body text-2xl">
-            welcome to
-            <img className="w-[30rem]" src="../images/sloth_logo_welcome.png" alt="LazyHacks logo" />
+        <div className="flex flex-col items-center text-center justify-center h-[85vh]">
+          <h1 className="row font-body text-2xl text-welcome-text">
+            welcome to...
+            <img className="w-[30rem] my-5" src="../images/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
           </h1>
+          <h2 className="font-body text-xl text-welcome-text">
+            December 7th, 2024 • 8:00 AM – 11:00 PM • In person at Shopify Ottawa
+          </h2>
+          <a href="#apply" className="relative group">
+              <img
+                className="h-[120px] w-[240px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                src="../images/nav/apply_pillow.png"
+              ></img>
+              <h3 className="absolute text-2xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                apply!
+              </h3>
+            </a>
         </div>
       </main>
 
