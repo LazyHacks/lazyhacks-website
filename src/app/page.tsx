@@ -35,6 +35,12 @@ export default function Home() {
       </header>
 
       <main>
+        <div className="flex items-center text-center justify-center h-[85vh]">
+          <h1 className="font-body text-2xl">
+            welcome to
+            <img className="w-[30rem]" src="../images/sloth_logo_welcome.png" alt="LazyHacks logo" />
+          </h1>
+        </div>
       </main>
     </>
   );
