@@ -11,7 +11,7 @@ export default function Home() {
               src="../images/nav/sloth_logo.PNG"
             ></img>
             <img
-              className="h-[100px] w-[100px] object-cover"
+              className="h-[100px] object-cover"
               src="../images/nav/hackclub_logo.png"
             ></img>
           </div>
@@ -21,7 +21,7 @@ export default function Home() {
                 className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                 src="../images/nav/about_pillow.png"
               ></img>
-              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <h3 className="absolute text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 about
               </h3>
             </a>
@@ -30,7 +30,7 @@ export default function Home() {
                 className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                 src="../images/nav/faq_pillow.png"
               ></img>
-              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <h3 className="absolute text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 faq
               </h3>
             </a>
@@ -39,7 +39,7 @@ export default function Home() {
                 className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                 src="../images/nav/sponsors_pillow.png"
               ></img>
-              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <h3 className="absolute text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 sponsors
               </h3>
             </a>
@@ -48,7 +48,7 @@ export default function Home() {
                 className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                 src="../images/nav/socials_pillow.png"
               ></img>
-              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <h3 className="absolute text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 socials
               </h3>
             </a>
@@ -57,7 +57,7 @@ export default function Home() {
                 className="h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                 src="../images/nav/apply_pillow.png"
               ></img>
-              <h3 className="absolute text-xl text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <h3 className="absolute text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 apply!
               </h3>
             </a>
