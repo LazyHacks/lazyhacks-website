@@ -69,41 +69,61 @@ export default function Home() {
         <div className="flex items-center text-center justify-center h-[85vh]">
           <h1 className="font-body text-2xl">
             welcome to
-            <img className="w-[30rem]" src="../images/sloth_logo_welcome.png" alt="LazyHacks logo" />
+            <img
+              className="w-[30rem]"
+              src="../images/sloth_logo_welcome.png"
+              alt="LazyHacks logo"
+            />
           </h1>
         </div>
       </main>
 
-      <footer className="flex flex-col items-center justify-center w-full h-auto border-t py-8 bg-gray-200">
+      <footer className="flex flex-col items-center justify-center w-full h-auto py-8">
         <p className="mb-4 text-lg">made with love</p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2">
           <a
             href="https://www.linkedin.com/in/vickie-chen0728/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/facebook.png" alt="Vickie" className="h-16 w-16" />
+            <img
+              src="../images/footer/footer-vickie.png"
+              alt="Vickie"
+              className="h-16 w-16 transform transition-transform duration-300 hover:scale-110"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/ariel-liu-056500297/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/twitter.png" alt="Ariel" className="h-16 w-16" />
+            <img
+              src="../images/footer/footer-ariel.png"
+              alt="Ariel"
+              className="h-16 w-16 transform transition-transform duration-300 hover:scale-110"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/skyler-ma-3372892a1/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/instagram.png" alt="Skyler" className="h-16 w-16" />
+            <img
+              src="../images/footer/footer-skyler.png"
+              alt="Skyler"
+              className="h-16 w-16 transform transition-transform duration-300 hover:scale-110"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/karan-chawla-dora/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/linkedin.png" alt="Karan" className="h-16 w-16" />
+            <img
+              src="../images/footer/footer-karan.png"
+              alt="Karan"
+              className="h-16 w-16 transform transition-transform duration-300 hover:scale-110"
+            />
           </a>
         </div>
       </footer>
