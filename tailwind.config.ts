@@ -21,7 +21,7 @@ const config: Config = {
     },
     fontFamily: {
       "display": ["Pangolin", "cursive"],
-      "body": ["'var(--font-courier-prime)'", "monospace"],
+      "body": ["var(--font-courier-prime)", "monospace"],
     }
   },
   plugins: [],
