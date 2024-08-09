@@ -20,7 +20,7 @@ const config: Config = {
       "welcome-text": "#171717",
     },
     fontFamily: {
-      "display": ["Pangolin", "cursive"],
+      "display": ["var(--font-pangolin)", "cursive"],
       "body": ["var(--font-courier-prime)", "monospace"],
     }
   },
