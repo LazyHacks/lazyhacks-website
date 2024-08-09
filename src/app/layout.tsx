@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Courier_Prime } from "next/font/google";
 import "./globals.css";
 
-const courier_prime = Courier_Prime({
+const courierPrime = Courier_Prime({
   subsets: ['latin'],
   display: 'swap',
   weight: '400',
