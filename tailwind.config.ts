@@ -20,8 +20,8 @@ const config: Config = {
       "welcome-text": "#171717",
     },
     fontFamily: {
-      "display": ["Pangolin", "cursive"],
-      "body": ["'var(--font-courier-prime)'", "monospace"],
+      "display": ["var(--font-pangolin)", "cursive"],
+      "body": ["var(--font-courier-prime)", "monospace"],
     }
   },
   plugins: [],
