@@ -2,24 +2,40 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <header>
-        <nav className="flex items-top md:items-center justify-between "> 
-          {/* add 'w-full fixed top-0' to className above for sticky navbar */}
+        <nav className={`flex z-50 items-top md:items-center justify-between w-full fixed top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown" : "bg-white"}`}> 
+          {/* add '' to className above for sticky navbar */}
           <div className="flex">
-            <img
+            <a href="#"><img
               className="h-[100px] w-[80px] lg:w-[100px] object-contain"
               src="../images/nav/sloth_logo.PNG"
-            ></img>
-            <img
-              className="h-[50px] lg:h-[100px] object-cover"
+            ></img></a>
+            <a target="blank" href="https://hackclub.com/"><img
+              className="h-[70px] lg:h-[100px] object-cover"
               src="../images/nav/hackclub_logo.png"
-            ></img>
+            ></img></a>
           </div>
           <div>
             {/* Hamburger Icon */}
@@ -46,12 +62,12 @@ export default function Home() {
             </div>
 
             {/* Navbar Links */}
-            <div className={`md:flex ${isOpen ? "block" : "hidden"}`}>
+            <div className={`md:flex md:max-h-screen overflow-hidden transition-[max-height] duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}>
               <ul className="flex flex-col mr-4 items-end md:flex-row">
                 <li className="mb-4 md:mb-0">
                   <a href="#about" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                       src="../images/nav/about_pillow.png"
                     ></img>
                     <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -65,7 +81,7 @@ export default function Home() {
                 <li className="mb-4 md:mb-0">
                   <a href="#faq" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                       src="../images/nav/faq_pillow.png"
                     ></img>
                     <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -79,7 +95,7 @@ export default function Home() {
                 <li className="mb-4 md:mb-0">
                   <a href="#sponsors" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                       src="../images/nav/sponsors_pillow.png"
                     ></img>
                     <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -93,7 +109,7 @@ export default function Home() {
                 <li className="mb-4 md:mb-0">
                   <a href="#socials" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                       src="../images/nav/socials_pillow.png"
                     ></img>
                     <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -107,7 +123,7 @@ export default function Home() {
                 <li className="mb-4 md:mb-0">
                   <a href="#apply" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
                       src="../images/nav/apply_pillow.png"
                     ></img>
                     <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -147,6 +163,27 @@ export default function Home() {
           <div className="flex justify-between items-center mx-4">
             <img className="w-1/3" src="../images/sections/dogprints.png"></img>
             <h1 className="text-4xl md:text-6xl font-display text-section-brown">about</h1>
+            <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+          </div>
+        </section>
+        <section id="faq">
+          <div className="flex justify-between items-center mx-4">
+            <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+            <h1 className="text-4xl md:text-6xl font-display text-section-brown">faq</h1>
+            <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+          </div>
+        </section>
+        <section id="sponsors">
+          <div className="flex justify-between items-center mx-4">
+            <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+            <h1 className="text-4xl md:text-6xl font-display text-section-brown">sponsors</h1>
+            <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+          </div>
+        </section>
+        <section id="socials">
+          <div className="flex justify-between items-center mx-4">
+            <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+            <h1 className="text-4xl md:text-6xl font-display text-section-brown">socials</h1>
             <img className="w-1/3" src="../images/sections/dogprints.png"></img>
           </div>
         </section>
