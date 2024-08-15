@@ -17,7 +17,9 @@ const config: Config = {
     colors: {
       "background-yellow": "#fff2c5",
       "nav-brown": "#794c5b",
+      "nav-background-brown": "#dec197",
       "welcome-text": "#171717",
+      "section-brown": "#956843",
     },
     fontFamily: {
       "display": ["var(--font-pangolin)", "cursive"],
