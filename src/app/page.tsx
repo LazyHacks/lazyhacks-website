@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Faq from "./sections/Faq";
+import About from "./sections/About"
 
 // CONSTANTS
 import { useState } from "react";
@@ -77,7 +78,7 @@ export default function Home() {
                       about
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
-                      About
+                      about
                     </span>
                   </a>
                 </li>
@@ -91,7 +92,7 @@ export default function Home() {
                       faq
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
-                      FAQ
+                      faq
                     </span>
                   </a>
                 </li>
@@ -105,7 +106,7 @@ export default function Home() {
                       sponsors
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
-                      Sponsors
+                      sponsors
                     </span>
                   </a>
                 </li>
@@ -119,7 +120,7 @@ export default function Home() {
                       socials
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
-                      Socials
+                      socials
                     </span>
                   </a>
                 </li>
@@ -133,7 +134,7 @@ export default function Home() {
                       apply!
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
-                      Apply
+                      apply!
                     </span>
                   </a>
                 </li>
@@ -144,15 +145,14 @@ export default function Home() {
       </header>
 
       <main>
-        {/* ABOUT section */}
+        {/* HOME section */}
         <div className="flex flex-col items-center text-center justify-center h-[85vh]">
           <h1 className="row font-body text-2xl text-welcome-text">
             welcome to...
             <img className="w-[30rem] my-5" src="../images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
           </h1>
           <h2 className="font-body text-xl text-welcome-text">
-            December 7th, 2024 • 8:00 AM – 11:00 PM • In person at Shopify
-            Ottawa
+            December 7th, 2024 • 8:00 AM – 11:00 PM • In person Ottawa
           </h2>
           <a href="#apply" className="relative group">
             <img
@@ -165,35 +165,30 @@ export default function Home() {
           </a>
         </div>
 
-        <section id="about">
-          <div className="flex justify-between items-center mx-4">
-            <img className="w-1/3" src="../images/sections/dogprints.png"></img>
-            <h1 className="text-4xl md:text-6xl font-display text-section-brown">about</h1>
-            <img className="w-1/3" src="../images/sections/dogprints.png"></img>
-          </div>
-        </section>
+        {/* FAQ section */}
+        <About />
         
         {/* FAQ section */}
         <Faq />
 
         <section id="sponsors">
-          <div className="flex justify-between items-center mx-4">
+          <div className="flex justify-between items-center">
             <img className="w-1/3" src="../images/sections/dogprints.png"></img>
-            <h1 className="text-4xl md:text-6xl font-display text-section-brown">sponsors</h1>
+            <h1 className="text-4xl md:text-7xl font-display text-section-brown">sponsors</h1>
             <img className="w-1/3" src="../images/sections/dogprints.png"></img>
           </div>
         </section>
         <section id="socials">
-          <div className="flex justify-between items-center mx-4">
+          <div className="flex justify-between items-center">
             <img className="w-1/3" src="../images/sections/dogprints.png"></img>
-            <h1 className="text-4xl md:text-6xl font-display text-section-brown">socials</h1>
+            <h1 className="text-4xl md:text-7xl font-display text-section-brown">socials</h1>
             <img className="w-1/3" src="../images/sections/dogprints.png"></img>
           </div>
         </section>
       </main>
 
       <footer className="flex flex-col items-center justify-center w-full h-auto py-8">
-        <p className="mb-4 font-display text-lg">made with love</p>
+        <p className="mb-4 font-display text-nav-brown text-lg">made with love</p>
         <div className="grid grid-cols-2">
           <a
             href="https://www.linkedin.com/in/vickie-chen0728/"
