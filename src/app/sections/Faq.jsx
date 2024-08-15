@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { faqs } from "./constants";
+import { faqs } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
