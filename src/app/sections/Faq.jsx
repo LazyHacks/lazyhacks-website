@@ -67,7 +67,7 @@ const Faq = () => {
                   icon={open === index + 5 ? faMinus : faPlus}
                   className="text-gray-600 mr-4"
                 />
-                <h3 className="text-4xl font-display sm:text-3xl">
+                <h3 className="text-4xl font-display sm:text-3xl ">
                   {faq.question}
                 </h3>
               </div>
