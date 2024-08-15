@@ -17,7 +17,11 @@ const Faq = () => {
       id="faq"
       className="flex flex-col items-center text-center justify-center "
     >
-      <h1 className="text-[100px] font-display text-nav-brown">faq</h1>
+      <div className="flex justify-between items-center w-full">
+        <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+        <h1 className="text-4xl md:text-7xl font-display text-section-brown">faq</h1>
+        <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+      </div>
       <div className="flex flex-col md:flex-row">
         {/* First Column */}
         <div className="flex-1">
@@ -34,9 +38,9 @@ const Faq = () => {
               >
                 <FontAwesomeIcon
                   icon={open === index ? faMinus : faPlus}
-                  className="text-gray-600 mr-5"
+                  className="text-nav-brown mr-5"
                 />
-                <h3 className="text-4xl font-display sm:text-3xl">
+                <h3 className="text-4xl text-nav-brown font-display sm:text-3xl">
                   {faq.question}
                 </h3>
               </div>
@@ -45,7 +49,7 @@ const Faq = () => {
                   open === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-gray-600 font-body sm:mx-6">{faq.answer}</p>
+                <p className="text-nav-brown font-body sm:mx-6">{faq.answer}</p>
               </div>
             </div>
           ))}
@@ -65,9 +69,9 @@ const Faq = () => {
               >
                 <FontAwesomeIcon
                   icon={open === index + 5 ? faMinus : faPlus}
-                  className="text-gray-600 mr-4"
+                  className="text-nav-brown mr-4"
                 />
-                <h3 className="text-4xl font-display sm:text-3xl ">
+                <h3 className="text-4xl text-nav-brown font-display sm:text-3xl ">
                   {faq.question}
                 </h3>
               </div>
@@ -78,7 +82,7 @@ const Faq = () => {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-gray-600 font-body mx-6">{faq.answer}</p>
+                <p className="text-nav-brown font-body mx-6">{faq.answer}</p>
               </div>
             </div>
           ))}
