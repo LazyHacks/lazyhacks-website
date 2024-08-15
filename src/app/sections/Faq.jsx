@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { faqs } from "../constants";
+import { faqs } from "./constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,9 +18,9 @@ const Faq = () => {
       className="flex flex-col items-center text-center justify-center "
     >
       <div className="flex justify-between items-center w-full">
-        <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+        <img className="w-1/3" src="./images/sections/dogprints.png"></img>
         <h1 className="text-4xl md:text-7xl font-display text-section-brown">faq</h1>
-        <img className="w-1/3" src="../images/sections/dogprints.png"></img>
+        <img className="w-1/3" src="./images/sections/dogprints.png"></img>
       </div>
       <div className="flex flex-col md:flex-row">
         {/* First Column */}
