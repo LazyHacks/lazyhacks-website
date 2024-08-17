@@ -161,7 +161,7 @@ export default function Home() {
             ></img>
             <h3 className="absolute text-2xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               apply!
-            </h3>
+            </h3> 
           </a>
         </div>
 
@@ -174,14 +174,14 @@ export default function Home() {
         <section id="sponsors">
           <div className="flex justify-between items-center">
             <img className="w-1/3" src="./images/sections/dogprints.png"></img>
-            <h1 className="text-4xl md:text-7xl font-display text-section-brown">sponsors</h1>
+            <h2 className="text-4xl md:text-7xl font-display text-section-brown">sponsors</h2>
             <img className="w-1/3" src="./images/sections/dogprints.png"></img>
           </div>
         </section>
         <section id="socials">
           <div className="flex justify-between items-center">
             <img className="w-1/3" src="./images/sections/dogprints.png"></img>
-            <h1 className="text-4xl md:text-7xl font-display text-section-brown">socials</h1>
+            <h2 className="text-4xl md:text-7xl font-display text-section-brown">socials</h2>
             <img className="w-1/3" src="./images/sections/dogprints.png"></img>
           </div>
         </section>

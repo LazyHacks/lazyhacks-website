@@ -19,7 +19,7 @@ const Faq = () => {
     >
       <div className="flex justify-between items-center w-full">
         <img className="w-1/3" src="./images/sections/dogprints.png"></img>
-        <h1 className="text-4xl md:text-7xl font-display text-section-brown">faq</h1>
+        <h2 className="text-4xl md:text-7xl font-display text-section-brown">faq</h2>
         <img className="w-1/3" src="./images/sections/dogprints.png"></img>
       </div>
       <div className="flex flex-col md:flex-row">
