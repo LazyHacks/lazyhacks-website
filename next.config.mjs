@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/lazyhacks-website",
+  basePath: process.env.BASE_PATH,
   output: "export",
 };
 
