@@ -151,9 +151,9 @@ export default function Home() {
             welcome to...
             <img className="w-[30rem] my-5" src="./images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
           </h1>
-          <h2 className="font-body text-xl text-welcome-text">
+          <p className="font-body text-xl text-welcome-text">
             December 7th, 2024 • 8:00 AM – 11:00 PM • In person Ottawa
-          </h2>
+          </p>
           <a href="#apply" className="relative group">
             <img
               className="h-[120px] w-[240px] object-cover transition-transform duration-300 transform group-hover:scale-110"
