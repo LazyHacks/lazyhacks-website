@@ -160,9 +160,9 @@ export default function Home() {
               className="h-[120px] w-[240px] object-cover transition-transform duration-300 transform group-hover:scale-110"
               src="./images/nav/apply_pillow.png"
             ></img>
-            <h3 className="absolute text-2xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <span className="absolute text-2xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               apply!
-            </h3> 
+            </span> 
           </a>
         </div>
 
