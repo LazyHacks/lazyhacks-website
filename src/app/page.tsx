@@ -148,17 +148,17 @@ export default function Home() {
             welcome to...
             <img className="w-[30rem] my-5" src="./images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
           </h1>
-          <h2 className="font-body text-xl text-welcome-text">
-            December 7th, 2024 • 8:00 AM – 11:00 PM • In person Ottawa
-          </h2>
+          <p className="font-body text-xl text-welcome-text">
+            December 7th, 2024 • 8:00 AM – 11:00 PM • In person at Shopify Ottawa
+          </p>
           <a href="#apply" className="relative group">
             <img
               className="h-[120px] w-[240px] object-cover transition-transform duration-300 transform group-hover:scale-110"
               src="./images/nav/apply_pillow.png"
             ></img>
-            <h3 className="absolute text-2xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <span className="absolute text-2xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               apply!
-            </h3>
+            </span> 
           </a>
         </div>
 
@@ -173,7 +173,7 @@ export default function Home() {
         <section id="socials">
           <div className="flex justify-between items-center">
             <img className="w-1/3" src="./images/sections/dogprints.png"></img>
-            <h1 className="text-4xl md:text-7xl font-display text-section-brown">socials</h1>
+            <h2 className="text-4xl md:text-7xl font-display text-section-brown">socials</h2>
             <img className="w-1/3" src="./images/sections/dogprints.png"></img>
           </div>
         </section>
