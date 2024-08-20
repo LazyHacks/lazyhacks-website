@@ -15,10 +15,11 @@ const Sponsors = () => {
           connections with hackers.
         </p>
         <p className="mt-8">
-          Interested in sponsoring? Email us at
-          <a href="mailto:sponsor@lazyhacks.ca" className="text-welcome-text hover:text-nav-brown">
-            <span className="font-black"> sponsor@lazyhacks.ca</span>.
+          Interested in sponsoring? Email us at&nbsp;
+          <a href="mailto:sponsor@lazyhacks.ca" className="text-body-link hover:text-body-link-hover hover:underline">
+            <span className="font-black">sponsor@lazyhacks.ca</span>
           </a>
+          .
         </p>
       </div>
     </section>

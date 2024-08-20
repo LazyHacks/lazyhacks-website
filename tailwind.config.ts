@@ -20,6 +20,8 @@ const config: Config = {
       "nav-background-brown": "#dec197",
       "welcome-text": "#171717",
       "section-brown": "#956843",
+      "body-link": "#425b98",
+      "body-link-hover": "#5571b5",
     },
     fontFamily: {
       "display": ["var(--font-pangolin)", "cursive"],
