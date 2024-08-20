@@ -149,7 +149,7 @@ export default function Home() {
             <img className="w-[30rem] my-5" src="./images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
           </h1>
           <p className="font-body text-xl text-welcome-text">
-            December 7th, 2024 • 8:00 AM – 11:00 PM • In person at Shopify Ottawa
+            December 7th, 2024 • 8:00 AM – 11:00 PM • In person Ottawa
           </p>
           <a href="#apply" className="relative group">
             <img
