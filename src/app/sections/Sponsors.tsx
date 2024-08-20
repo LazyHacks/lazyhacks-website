@@ -9,7 +9,7 @@ const Sponsors = () => {
         <h1 className="text-4xl md:text-7xl font-display text-section-brown">sponsors</h1>
         <img className="w-1/3" src="./images/sections/dogprints.png"></img>
       </div>  
-      <div className="font-body text-3xl text-nav-brown w-[72rem]">
+      <div className="font-body text-2xl md:text-3xl text-nav-brown mx-48">
         <p>
           Sponsorships are what make LazyHacks happen! Sponsors have various opportunities to build meaningful
           connections with hackers.
