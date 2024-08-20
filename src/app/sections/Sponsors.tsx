@@ -6,7 +6,7 @@ const Sponsors = () => {
     >
       <div className="flex justify-between items-center w-full">
         <img className="w-1/3" src="./images/sections/dogprints.png"></img>
-        <h1 className="text-4xl md:text-7xl font-display text-section-brown">sponsors</h1>
+        <h2 className="text-4xl md:text-7xl font-display text-section-brown">sponsors</h2>
         <img className="w-1/3" src="./images/sections/dogprints.png"></img>
       </div>  
       <div className="font-body text-3xl text-nav-brown w-[72rem]">
