@@ -30,16 +30,12 @@ export default function Home() {
   return (
     <>
       <header>
-        <nav className={`flex z-50 items-top md:items-center justify-between w-full fixed top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown" : "bg-white"}`}> 
+        <nav className={`flex z-50 items-top md:items-center justify-between w-full px-3 fixed top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown" : "bg-white"}`}> 
           {/* add '' to className above for sticky navbar */}
           <div className="flex">
             <a href="#"><img
               className="h-[100px] w-[80px] lg:w-[100px] object-contain"
               src="./images/nav/sloth_logo.PNG"
-            ></img></a>
-            <a target="blank" href="https://hackclub.com/"><img
-              className="h-[70px] lg:h-[100px] object-cover"
-              src="./images/nav/hackclub_logo.png"
             ></img></a>
           </div>
           <div>
@@ -50,7 +46,7 @@ export default function Home() {
                 className="text-nav-brown focus:outline-none"
               >
                 <svg
-                  className="w-6 h-6 mt-8 mr-4"
+                  className="w-6 h-6 mt-8"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -68,7 +64,7 @@ export default function Home() {
 
             {/* Navbar Links */}
             <div className={`md:flex md:max-h-screen overflow-hidden transition-[max-height] duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}>
-              <ul className="flex flex-col mr-4 items-end md:flex-row">
+              <ul className="flex flex-col items-end md:flex-row">
                 <li className="mb-4 md:mb-0">
                   <a href="#about" className="relative group">
                     <img
@@ -147,7 +143,7 @@ export default function Home() {
 
       <main>
         {/* HOME section */}
-        <div className="flex flex-col items-center text-center justify-center h-[85vh]">
+        <div className="flex flex-col items-center text-center justify-center mt-32 h-[85vh]">
           <h1 className="row font-body text-2xl text-welcome-text">
             welcome to...
             <img className="w-[30rem] my-5" src="./images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
