@@ -29,8 +29,8 @@ export default function Home() {
 
   return (
     <>
-      <header>
-        <nav className={`flex z-50 items-top md:items-center justify-between w-full px-3 fixed top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown" : "bg-white"}`}> 
+      <header className="w-full">
+        <nav className={`flex z-50 items-top md:items-center justify-between box-border overflow-x-hidden w-[100%] max-w-[100%] px-3 fixed left-0 top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown" : "bg-white"}`}> 
           {/* add '' to className above for sticky navbar */}
           <div className="flex">
             <a href="#"><img

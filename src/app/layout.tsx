@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Courier_Prime, Pangolin, } from "next/font/google";
 import "./globals.css";
 
@@ -21,6 +21,15 @@ export const metadata: Metadata = {
   description: "Ottawa's Laziest Highschool Hackathon!",
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 0.9,
+  // maximumScale: 1,
+  userScalable: true,
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-    <link rel="icon" href="/favicon.ico" />
+    {/* <link rel="icon" href="/favicon.ico" /> */}
     <html lang="en" className={`${courierPrime.variable} scroll-smooth ${pangolin.variable}`}>
       <body className="bg-background-yellow bg-[linear-gradient(to_right,#FEE0B6_1px,transparent_1px),linear-gradient(to_bottom,#FEE0B6_1px,transparent_1px)] bg-[size:32px_32px]">{children}</body>
     </html></>
