@@ -16,8 +16,8 @@ const Sponsors = () => {
         </p>
         <p className="mt-8">
           Interested in sponsoring? Email us at&nbsp;
-          <a href="mailto:sponsor@lazyhacks.ca" className="text-body-link hover:text-body-link-hover hover:underline">
-            <span className="font-black">sponsor@lazyhacks.ca</span>
+          <a href="mailto:team@lazyhacks.ca" className="text-body-link hover:text-body-link-hover hover:underline">
+            <span className="font-black">team@lazyhacks.ca</span>
           </a>
           .
         </p>
