@@ -17,7 +17,7 @@ const config: Config = {
     colors: {
       "background-yellow": "#fff2c5",
       "nav-brown": "#794c5b",
-      "nav-background-brown": "#dec197",
+      "nav-background-brown": "#ffe3a1",
       "welcome-text": "#171717",
       "section-brown": "#956843",
       "body-link": "#365597",
