@@ -40,12 +40,12 @@ const Faq = () => {
                   icon={open === index ? faMinus : faPlus}
                   className="text-nav-brown mr-5"
                 />
-                <h3 className="text-nav-brown font-display text-3xl">
+                <h3 className="text-nav-brown font-body text-2xl md:text-3xl">
                   {faq.question}
                 </h3>
               </div>
               <div
-                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-500 ease-in-out transform ${
+                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-500 ease-out transform ${
                   open === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
@@ -71,12 +71,12 @@ const Faq = () => {
                   icon={open === index + 5 ? faMinus : faPlus}
                   className="text-nav-brown mr-4"
                 />
-                <h3 className="text-nav-brown font-display text-3xl">
+                <h3 className="text-nav-brown font-body text-2xl md:text-3xl">
                   {faq.question}
                 </h3>
               </div>
               <div
-                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-500 ease-in-out transform ${
+                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-500 ease-out transform ${
                   open === index + 5
                     ? "max-h-40 opacity-100"
                     : "max-h-0 opacity-0"

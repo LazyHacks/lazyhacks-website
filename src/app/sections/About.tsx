@@ -13,7 +13,7 @@ const About = () => {
         <img className="w-1/3" src="./images/sections/dogprints.png"></img>
       </div>
       <div className="flex md:flex-row flex-col mx-4 md:mx-24 items-center">
-        <p className="text-nav-brown text-center text-pretty font-body md:w-1/2 text-xl md:text-3xl">
+        <p className="text-nav-brown text-center text-pretty leading-relaxed md:leading-relaxed font-body md:w-1/2 text-xl md:text-3xl">
           LazyHacks is a hackathon based on the theme of “laziness”. It is a 
           hackathon organized by high schoolers, for high schoolers, and aims 
           to inspire creativity, innovation, and collaboration through the shared 

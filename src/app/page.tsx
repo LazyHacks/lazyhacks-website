@@ -30,11 +30,11 @@ export default function Home() {
   return (
     <>
       <header className="w-full">
-        <nav className={`flex z-50 items-top md:items-center justify-between box-border overflow-x-hidden w-[100%] max-w-[100%] px-3 fixed left-0 top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown" : "bg-white"}`}> 
+        <nav className={`flex z-50 items-top md:items-center justify-between box-border overflow-x-hidden md:h-[85px] w-[100%] max-w-[100%] px-3 fixed left-0 top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown backdrop-blur-lg bg-opacity-50" : ""}`}> 
           {/* add '' to className above for sticky navbar */}
           <div className="flex">
             <a href="#"><img
-              className="h-[100px] w-[80px] lg:w-[100px] object-contain "
+              className="h-[80px] w-[80px] lg:w-[80px] object-contain "
               src="./images/nav/sloth_logo.PNG"
             ></img></a>
           </div>
@@ -63,15 +63,15 @@ export default function Home() {
             </div>
 
             {/* Navbar Links */}
-            <div className={`md:flex md:max-h-screen overflow-hidden transition-[max-height] duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}>
+            <div className={`md:flex md:max-h-screen overflow-hidden transition-[max-height] duration-300 ease-out ${isOpen ? "max-h-screen" : "max-h-0"}`}>
               <ul className="flex flex-col items-end md:flex-row">
                 <li className="mb-4 md:mb-0">
                   <a href="#about" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[80px] w-[120px] md:w-[190px] object-cover transition-transform duration-200 transform group-hover:scale-105 ease-out"
                       src="./images/nav/about_pillow.png"
                     ></img>
-                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:scale-105 duration-200 ease-out">
                       about
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
@@ -82,10 +82,10 @@ export default function Home() {
                 <li className="mb-4 md:mb-0">
                   <a href="#faq" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[80px] w-[120px] md:w-[190px] object-cover transition-transform duration-200 transform group-hover:scale-105 ease-out"
                       src="./images/nav/faq_pillow.png"
                     ></img>
-                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:scale-105 duration-200 ease-out">
                       faq
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
@@ -96,10 +96,10 @@ export default function Home() {
                 <li className="mb-4 md:mb-0">
                   <a href="#sponsors" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[80px] w-[120px] md:w-[190px] object-cover transition-transform duration-200 transform group-hover:scale-105 ease-out"
                       src="./images/nav/sponsors_pillow.png"
                     ></img>
-                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:scale-105 duration-200 ease-out">
                       sponsors
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
@@ -110,10 +110,10 @@ export default function Home() {
                 <li className="mb-4 md:mb-0">
                   <a href="#socials" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[80px] w-[120px] md:w-[190px] object-cover transition-transform duration-200 transform group-hover:scale-105 ease-out"
                       src="./images/nav/socials_pillow.png"
                     ></img>
-                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:scale-105 duration-200 ease-out">
                       socials
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
@@ -124,10 +124,10 @@ export default function Home() {
                 <li className="mb-4 md:mb-0">
                   <a href="#apply" className="relative group">
                     <img
-                      className="hidden md:block h-[100px] w-[120px] md:w-[200px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+                      className="hidden md:block h-[80px] w-[120px] md:w-[190px] object-cover transition-transform duration-200 transform group-hover:scale-105 ease-out"
                       src="./images/nav/apply_pillow.png"
                     ></img>
-                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <h3 className="hidden md:block absolute text-lg lg:text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:scale-105 duration-200 ease-out">
                       apply!
                     </h3>
                     <span className="block md:hidden text-nav-brown text-xl font-display hover:underline">
@@ -143,7 +143,7 @@ export default function Home() {
 
       <main>
         {/* HOME section */}
-        <div className="flex flex-col items-center text-center justify-center mt-32 h-[85vh]" id="apply">
+        <div className="flex flex-col items-center text-center justify-center mt-32 h-[85vh] px-8" id="apply">
           <h1 className="row font-body text-2xl text-welcome-text">
             welcome to...
             <img className="w-[40rem] my-5" src="./images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
@@ -153,11 +153,11 @@ export default function Home() {
           </p>
           <a href="#apply" className="relative group">
             <img
-              className="h-[200px] w-[400px] object-cover transition-transform duration-300 transform group-hover:scale-110"
+              className="h-[200px] w-[350px] object-cover transition-transform duration-200 transform group-hover:scale-105 ease-out"
               src="./images/nav/apply_pillow.png"
             ></img>
-            <span className="absolute text-2xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center">
-              coming soon...!
+            <span className="absolute text-xl font-display text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center px-3 duration-200 group-hover:scale-105 ease-out">
+              applications opening soon...
             </span> 
           </a>
         </div>

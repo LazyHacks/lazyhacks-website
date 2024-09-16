@@ -25,8 +25,8 @@ const config: Config = {
     },
     fontFamily: {
       "display": ["var(--font-pangolin)", "cursive"],
-      "body": ["var(--font-courier-prime)", "monospace"],
-    }
+      "body": ["var(--font-lexend-deca)", "sans-serif"],
+    },
   },
   plugins: [],
 };
