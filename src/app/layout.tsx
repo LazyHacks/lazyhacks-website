@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Lexend_Deca, Pangolin, } from "next/font/google";
+import { Lexend_Deca, Love_Ya_Like_A_Sister, } from "next/font/google";
 import "./globals.css";
 
 const lexendDeca = Lexend_Deca({
@@ -9,11 +9,11 @@ const lexendDeca = Lexend_Deca({
   variable: '--font-lexend-deca',
 });
 
-const pangolin = Pangolin({
+const loveYa = Love_Ya_Like_A_Sister({
   subsets: ['latin'],
   display: 'swap',
   weight: '400',
-  variable: '--font-pangolin',
+  variable: '--font-love-ya',
 });
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <>
     {/* <link rel="icon" href="/favicon.ico" /> */}
-    <html lang="en" className={`${lexendDeca.variable} scroll-smooth ${pangolin.variable}`}>
+    <html lang="en" className={`${lexendDeca.variable} scroll-smooth ${loveYa.variable}`}>
       <body className="bg-background-yellow bg-[linear-gradient(to_right,#FEE0B6_1px,transparent_1px),linear-gradient(to_bottom,#FEE0B6_1px,transparent_1px)] bg-[size:32px_32px]">{children}</body>
     </html></>
   );

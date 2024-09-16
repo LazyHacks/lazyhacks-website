@@ -24,7 +24,7 @@ const config: Config = {
       "body-link-hover": "#456bbc",
     },
     fontFamily: {
-      "display": ["var(--font-pangolin)", "cursive"],
+      "display": ["var(--font-love-ya)", "cursive"],
       "body": ["var(--font-lexend-deca)", "sans-serif"],
     },
   },
