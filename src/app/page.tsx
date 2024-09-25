@@ -46,7 +46,7 @@ export default function Home() {
                 className="text-nav-brown focus:outline-none"
               >
                 <svg
-                  className="w-6 h-6 mt-8"
+                  className="w-6 h-6 my-5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -63,7 +63,7 @@ export default function Home() {
             </div>
 
             {/* Navbar Links */}
-            <div className={`md:flex md:max-h-screen overflow-hidden transition-[max-height] duration-300 ease-out ${isOpen ? "max-h-screen" : "max-h-0"}`}>
+            <div className={`md:flex md:max-h-screen overflow-hidden md:overflow-visible transition-[max-height] duration-300 ease-out ${isOpen ? "max-h-screen" : "max-h-0"}`}>
               <ul className="flex flex-col items-end md:items-center md:flex-row ">
                 <li className="mb-4 md:mb-0">
                   <a href="#about" className="relative group">
