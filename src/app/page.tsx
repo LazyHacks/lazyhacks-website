@@ -30,11 +30,11 @@ export default function Home() {
   return (
     <>
       <header className="w-full">
-        <nav className={`flex z-50 py-1 ps-5 pe-8 items-top md:items-center justify-between box-border overflow-x-hidden w-[100%] max-w-[100%] px-3 fixed left-0 top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown backdrop-blur-lg bg-opacity-50" : ""}`}> 
+        <nav className={`flex z-50 py-2 ps-5 pe-8 items-top md:items-center justify-between box-border overflow-x-hidden w-[100%] max-w-[100%] px-3 fixed left-0 top-0 transition-colours duration-300 ${isScrolled ? "bg-nav-background-brown backdrop-blur-lg bg-opacity-50" : ""}`}> 
           {/* add '' to className above for sticky navbar */}
           <div className="flex">
             <a href="#"><img
-              className="w-20 duration-200 hover:scale-110 ease-out"
+              className="w-16 duration-200 hover:scale-105 ease-out"
               src="./images/nav/sloth_logo.PNG"
             ></img></a>
           </div>
