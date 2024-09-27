@@ -19,7 +19,7 @@ const About = () => {
           to inspire creativity, innovation, and collaboration through the shared 
           lazy mindset of youth.
         </p>
-        <div className="md:w-[730px] md:h-[500px] w-[365px] h-[250px] relative">
+        <div className="mt-6 md:mt-0 md:w-[730px] md:h-[500px] w-[365px] h-[250px] relative">
           <img className="md:w-[350px] md:h-[350px] w-[175px] h-[175px] absolute z-40 left-0 bottom-[20px] md:bottom-[40px]" src="./images/about/sloth-on-chair.png"></img>
           <img className="md:w-[500px] md:h-[500px] w-[250px] h-[250px] absolute right-[20px] md:right-0 top-0" src="./images/about/fireplace.png"></img>
         </div>
