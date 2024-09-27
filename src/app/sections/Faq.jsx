@@ -45,7 +45,7 @@ const Faq = () => {
                 </h3>
               </div>
               <div
-                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-300 ease-out transform ${
+                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-500 ease-out transform ${
                   open === index ? "max-h-52 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
@@ -76,7 +76,7 @@ const Faq = () => {
                 </h3>
               </div>
               <div
-                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-300 ease-out transform ${
+                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-500 ease-out transform ${
                   open === index + 5
                     ? "max-h-52 opacity-100"
                     : "max-h-0 opacity-0"
