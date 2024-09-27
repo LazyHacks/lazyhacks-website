@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const About = () => {
   return (
     <section id="about" className="flex flex-col">
-      <div className="flex justify-between items-center py-8 mt-24 mb-8">
+      <div className="flex justify-between items-center mt-24 mb-8 md:mt-30 md:mb-20">
         <img className="w-1/3" src="./images/sections/dogprints.png"></img>
         <h2 className="text-4xl md:text-7xl font-display text-section-brown">about</h2>
         <img className="w-1/3" src="./images/sections/dogprints.png"></img>
