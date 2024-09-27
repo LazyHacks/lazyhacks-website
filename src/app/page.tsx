@@ -4,6 +4,7 @@ import Image from "next/image";
 import Faq from "./sections/Faq";
 import About from "./sections/About"
 import Sponsors from "./sections/Sponsors"
+import Socials from "./sections/Socials"
 
 // CONSTANTS
 import { useState } from "react";
@@ -170,16 +171,10 @@ export default function Home() {
 
         <Sponsors />
 
-        <section id="socials">
-          <div className="flex justify-between items-center">
-            <img className="w-1/3" src="./images/sections/dogprints.png"></img>
-            <h2 className="text-4xl md:text-7xl font-display text-section-brown">socials</h2>
-            <img className="w-1/3" src="./images/sections/dogprints.png"></img>
-          </div>
-        </section>
+        <Socials />
       </main>
 
-      <footer className="flex flex-col items-center justify-center w-full h-auto py-8">
+      <footer className="flex flex-col items-center justify-center w-full h-auto pt-16 pb-5">
         <p className="mb-4 font-display text-nav-brown text-lg">made with love</p>
         <div className="grid grid-cols-2">
           <a
