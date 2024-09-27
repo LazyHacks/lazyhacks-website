@@ -46,7 +46,7 @@ const Faq = () => {
               </div>
               <div
                 className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-300 ease-out transform ${
-                  open === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                  open === index ? "max-h-52 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <p className="text-nav-brown font-body sm:mx-6 mt-2 md:mt-0">{faq.answer}</p>
@@ -78,7 +78,7 @@ const Faq = () => {
               <div
                 className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-300 ease-out transform ${
                   open === index + 5
-                    ? "max-h-40 opacity-100"
+                    ? "max-h-52 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
