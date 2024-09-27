@@ -144,7 +144,7 @@ export default function Home() {
 
       <main>
         {/* HOME section */}
-        <div className="flex flex-col items-center text-center justify-center h-[100vh] px-8" id="apply">
+        <div className="flex flex-col items-center text-center justify-center h-[85vh] pt-32 px-8" id="apply">
           <h1 className="row font-display text-4xl text-welcome-text">
             welcome to...
             <img className="w-[40rem] my-5" src="./images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
