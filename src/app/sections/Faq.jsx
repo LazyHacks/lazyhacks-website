@@ -40,7 +40,7 @@ const Faq = () => {
                   icon={open === index ? faMinus : faPlus}
                   className="text-nav-brown mr-5"
                 />
-                <h3 className="text-nav-brown font-body text-2xl md:text-3xl">
+                <h3 className="text-nav-brown font-body text-xl md:text-3xl">
                   {faq.question}
                 </h3>
               </div>
@@ -71,7 +71,7 @@ const Faq = () => {
                   icon={open === index + 5 ? faMinus : faPlus}
                   className="text-nav-brown mr-4"
                 />
-                <h3 className="text-nav-brown font-body text-2xl md:text-3xl">
+                <h3 className="text-nav-brown font-body text-xl md:text-3xl">
                   {faq.question}
                 </h3>
               </div>
