@@ -28,12 +28,12 @@ const Faq = () => {
           {faqs.slice(0, 5).map((faq, index) => (
             <div
               key={index}
-              className={`bg-white rounded-lg p-6 mb-4 transition-all duration-300 ${
+              className={`bg-white rounded-lg p-6 transition-all duration-300 ${
                 open === index ? "expanded" : ""
               }`}
             >
               <div
-                className="flex items-center mb-4 cursor-pointer justify-center"
+                className="flex items-center md:mb-4 cursor-pointer justify-center"
                 onClick={() => toggle(index)}
               >
                 <FontAwesomeIcon
@@ -45,11 +45,11 @@ const Faq = () => {
                 </h3>
               </div>
               <div
-                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-500 ease-out transform ${
+                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-300 ease-out transform ${
                   open === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-nav-brown font-body sm:mx-6">{faq.answer}</p>
+                <p className="text-nav-brown font-body sm:mx-6 mt-2 md:mt-0">{faq.answer}</p>
               </div>
             </div>
           ))}
@@ -59,12 +59,12 @@ const Faq = () => {
           {faqs.slice(5, 10).map((faq, index) => (
             <div
               key={index + 5}
-              className={`bg-white rounded-lg p-6 mb-4 transition-all duration-300 ${
+              className={`bg-white rounded-lg p-6 transition-all duration-300 ${
                 open === index + 5 ? "expanded" : ""
               }`}
             >
               <div
-                className="flex items-center mb-4 cursor-pointer justify-center"
+                className="flex items-center md:mb-4 cursor-pointer justify-center"
                 onClick={() => toggle(index + 5)}
               >
                 <FontAwesomeIcon
@@ -76,13 +76,13 @@ const Faq = () => {
                 </h3>
               </div>
               <div
-                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-500 ease-out transform ${
+                className={`mx-10 sm:mx-4 overflow-hidden transition-all duration-300 ease-out transform ${
                   open === index + 5
                     ? "max-h-40 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-nav-brown font-body mx-6">{faq.answer}</p>
+                <p className="text-nav-brown font-body mx-6 mt-2 md:mt-0">{faq.answer}</p>
               </div>
             </div>
           ))}
