@@ -6,13 +6,13 @@ import { useEffect } from "react";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="my-32">
       <div className="flex justify-between items-center">
         <img className="w-1/3 h-[150px] object-cover animate-bounce" src="./images/sections/dogprints.png"></img>
         <h2 className="text-4xl md:text-7xl font-display text-section-brown">about</h2>
         <img className="w-1/3 h-[150px] object-cover animate-bounce" src="./images/sections/dogprints.png"></img>
       </div>
-      <div className="flex md:flex-row flex-col mx-4 md:mx-24 items-center">
+      <div className="flex md:flex-row flex-col mx-4 mt-16 md:mx-24 items-center">
         <p className="text-nav-brown text-center text-pretty leading-relaxed md:leading-relaxed font-body md:w-1/2 text-xl md:text-3xl">
           LazyHacks is a hackathon based on the theme of “laziness”. It is a 
           hackathon organized by high schoolers, for high schoolers, and aims 
