@@ -4,6 +4,7 @@ import Image from "next/image";
 import Faq from "./sections/Faq";
 import About from "./sections/About"
 import Sponsors from "./sections/Sponsors"
+import ImageCycle from "./sections/ImageCycle"
 import Socials from "./sections/Socials"
 
 // CONSTANTS
@@ -12,7 +13,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function Home() {
           {/* add '' to className above for sticky navbar */}
           <div className="flex">
             <a href="#"><img
-              className="w-16 duration-200 hover:scale-105 ease-out"
+              className="h-[100px] w-[80px] lg:w-[100px] object-contain duration-200 hover:scale-105 ease-out"
               src="./images/nav/sloth_logo.PNG"
             ></img></a>
           </div>
@@ -147,7 +148,8 @@ export default function Home() {
         <div className="flex flex-col items-center text-center justify-center h-[90vh] pt-32 px-8" id="apply">
           <h1 className="row font-display text-4xl text-welcome-text">
             welcome to...
-            <img className="w-[40rem] my-5" src="./images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" />
+            {/* <img className="w-[40rem] my-5" src="./images/home/sloth_logo_welcome_800x300.png" alt="LazyHacks logo" /> */}
+            <ImageCycle />
           </h1>
           <p className="font-body text-xl text-welcome-text">
             December 7th, 2024 • 8:00 AM – 11:00 PM • In person @ Nokia, Ottawa
