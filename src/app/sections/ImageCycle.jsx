@@ -27,7 +27,7 @@ const ImageCycle = () => {
     //     src={images[currentIndex]}
     //   ></img></a>
     // </div>
-    <img className="w-[40rem] h-[400px] object-cover my-5" src={images[currentIndex]} alt="LazyHacks logo" />
+    <img className="w-[40rem] h-[250px] md:h-[400px] object-cover my-3" src={images[currentIndex]} alt="LazyHacks logo" />
   );
 };
 
