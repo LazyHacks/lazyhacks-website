@@ -124,7 +124,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="mb-4 md:mb-0">
-                  <a href="#apply" className="relative group">
+                  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdMwYqJtKshNWqJmlGHsezRzH_iovYAbyq3CdQQmr6kpgUVKw/viewform?usp=sf_link" className="relative group">
                     <img
                       className="hidden md:flex w-[7.5rem] mx-5 transition-transform duration-200 transform group-hover:scale-105 ease-out"
                       src="./images/nav/apply_pillow.png"
@@ -154,13 +154,13 @@ export default function Home() {
           <p className="font-body text-xl text-welcome-text">
             December 7th, 2024 • 8:00 AM – 11:00 PM • In person @ Nokia, Ottawa
           </p>
-          <a href="#apply" className="relative group mt-5">
+          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdMwYqJtKshNWqJmlGHsezRzH_iovYAbyq3CdQQmr6kpgUVKw/viewform?usp=sf_link" className="relative group mt-5">
             <img
               className="w-56 transition-transform duration-200 transform group-hover:scale-105 ease-out"
               src="./images/nav/apply_pillow.png"
             ></img>
             <span className="w-5/6 absolute text-xl font-body text-nav-brown top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center duration-200 group-hover:scale-105 ease-out">
-              applications opening soon...
+              applications open now!
             </span> 
           </a>
         </div>
