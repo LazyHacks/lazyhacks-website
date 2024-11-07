@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: "What is a hackathon?",
     answer:
-      "LazyHacks is a hackathon based on the theme of “laziness”. It is a hackathon organized by high schoolers, for high schoolers, and aims to inspire creativity, innovation, and collaboration through the shared lazy mindset of youth.",
+      "A hackathon is a social event, typically lasting several hours to  several days, where a large number of people come together to engage in collaborative computer programming. Participants, often working in teams, focus on creating software or hardware projects that might adhere to a specific theme or solve a given issue.",
   },
   {
     question: "How many people per team?",
