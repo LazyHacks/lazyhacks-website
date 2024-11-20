@@ -17,10 +17,17 @@ const Sponsors = () => {
           <a className="w-1/2 mb-12" target="_blank" href="https://www.nokia.com/">
             <img className="w-full transition-transform duration-200 transform hover:scale-105 ease-out" src="./images/sponsors/nokia_logo.png"></img>
           </a>
-          
-          <a className="w-2/5 flex flex-col items-center justify-center" target="_blank" href="https://dorahacks.io/">
-            <img className="w-full transition-transform duration-200 transform hover:scale-105 ease-out" src="./images/sponsors/dorahacks_logo.svg"></img>
+          <a className="w-1/2 mb-12" target="_blank" href="https://carleton.ca/vv/">
+            <img className="w-full transition-transform duration-200 transform hover:scale-105 ease-out" src="./images/sponsors/vv_logo.png"></img>
           </a>
+          <div className="w-2/3 flex align-middle justify-center">
+            <a className="w-1/3 flex flex-col items-center justify-center mr-5" target="_blank" href="https://dorahacks.io/">
+              <img className="w-full transition-transform duration-200 transform hover:scale-105 ease-out" src="./images/sponsors/dorahacks_logo.svg"></img>
+            </a>
+            <a className="w-1/3 md:h-[100px] flex flex-col items-center justify-center" target="_blank">
+              <img className="md:h-[100px] h-[60px] transition-transform duration-200 transform hover:scale-105 ease-out" src="./images/sponsors/pathtoivy_logo.png"></img>
+            </a>
+          </div>
         </div>
       </div>
       <div className="mt-8 font-body md:text-xl lg:text-2xl text-nav-brown w-5/6 xl:w-3/4">
